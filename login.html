@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="assets/js/script.js"></script>
+    <title>Entre Cicatrizes</title>
+</head>
+
+<body class="home" style="
+  background-color: #f1f1ce;
+  background-image: 
+  repeating-radial-gradient(circle at center, rgba(0,0,0,0.05) 0, rgba(87, 57, 13, 0.288) 1px, transparent 1px, transparent 3px);
+  background-size: 3px 3px;
+">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="enderecos.html" class="nav-link">Endereços</a></li>
+                    <li class="nav-item"><a href="comunidades.html" class="nav-link">Comunidades</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="cadastro.html">
+                        <i><i class="fa-solid fa-user-plus"></i></i>
+                    </a></button>
+
+                <button class="btn-default"><a href="login.html">
+                        <i id="icon_bottom" class="fa-solid fa-right-to-bracket"></i>
+                    </a>
+                </button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="enderecos.html" class="nav-link">Endereços</a></li>
+                <li class="nav-item"><a href="comunidades.html" class="nav-link">Comunidades</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="cadastro.html">Cadastrar</a></button>
+            </div>
+
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="login_container">
+        <div id="form_header">
+            <h1 id="form_title">Entrar</h1>
+            <button class="btn-default">
+                <a href="cadastro.html"><i id="icon_bottom" class="fa-solid fa-user-plus"></i></a>
+            </button>
+        </div>
+        <form action="#" id="form">
+            <div class="input-box">
+                <label for="birthdate" class="form-label">E-mail</label>
+                <div class="input-field">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <label for="password" class="form-label">Senha</label>
+                <div class="input-field">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="*******">
+                    <i class="fa-regular fa-eye-slash password-icon"></i>
+                </div>
+            </div>
+            <button type="submit" class="btn-default">
+                <i class="fa-solid fa-check"></i>
+                Criar Conta
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>
